@@ -1,0 +1,70 @@
+.main {
+    margin: 5rem 2rem;
+}
+
+.search-bar {
+    margin: 0.5rem;
+}
+
+.filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card {
+    margin: 0.4rem auto;
+    transition: all 0.5s;
+}
+
+.hover-effect:hover {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.inside {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+}
+
+.left {
+    width: 2%;
+    text-align: center;
+}
+
+
+/* .left div input {
+    margin: auto;
+    margin-top: 1.2rem;
+} */
+
+.center {
+    width: 86%;
+}
+
+.title {
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.right {
+    width: 12%;
+    text-align: center;
+}
+
+.right p {
+    margin: auto;
+}
+
+.description {
+    font-family: 'Ubuntu';
+    font-size: 1.2rem;
+}
+
+.bottom-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
