@@ -61,8 +61,7 @@
     </div>
 
     <div class="card hover-effect" *ngFor="let todo of todos">
-        <div class="card-body" data-bs-toggle="collapse" [attr.data-bs-target]="'#collapseExample' + todo.id"
-            aria-expanded="false" [attr.aria-controls]="'collapseExample' + todo.id">
+        <div class="card-body">
             <div class="inside">
                 <!-- for right -->
                 <div class="left">
@@ -73,7 +72,8 @@
                     </div>
                 </div>
                 <!-- for center -->
-                <div class="center">
+                <div class="center" data-bs-toggle="collapse" [attr.data-bs-target]="'#collapseExample' + todo.id"
+                    aria-expanded="false" [attr.aria-controls]="'collapseExample' + todo.id">
                     <p class="title">{{todo.title|uppercase}}</p>
                 </div>
             </div>

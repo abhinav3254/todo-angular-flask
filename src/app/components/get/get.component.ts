@@ -57,10 +57,7 @@ export class GetComponent implements OnInit {
     this.todoService.markAsDone(id).subscribe((res) => {
       console.log(res);
     });
-    // this.router.routeReuseStrategy.shouldReuseRoute = () => false;
-    // this.router.onSameUrlNavigation = 'reload';
-    // this.router.navigate([this.route.snapshot.url]);
-    window.location.reload();
+    // window.location.reload();
   }
 
   // for filter select
@@ -100,7 +97,7 @@ export class GetComponent implements OnInit {
   // delete todo
   deleteToDo(id: number) {
     this.todoService.deleteToDo(id).subscribe();
-    window.location.reload();
+    // window.location.reload();
   }
 
   // -------------------------- export csv button from here
