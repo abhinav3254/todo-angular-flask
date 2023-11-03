@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TodoserviceService } from '../todoservice.service';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { NgForm } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { AddComponent } from '../add/add.component';
@@ -14,7 +14,9 @@ export class GetComponent implements OnInit {
 
   todos: Todo[] = [];
 
-  constructor(private todoService: TodoserviceService, private router: Router, public dialog: MatDialog) { }
+  constructor(private todoService: TodoserviceService, private router: Router, public dialog: MatDialog,
+    private route: ActivatedRoute
+  ) { }
 
   ngOnInit(): void {
     this.getAllToDoFunction();
@@ -55,6 +57,9 @@ export class GetComponent implements OnInit {
     this.todoService.markAsDone(id).subscribe((res) => {
       console.log(res);
     });
+    // this.router.routeReuseStrategy.shouldReuseRoute = () => false;
+    // this.router.onSameUrlNavigation = 'reload';
+    // this.router.navigate([this.route.snapshot.url]);
     window.location.reload();
   }
 
