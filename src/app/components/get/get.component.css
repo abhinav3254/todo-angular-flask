@@ -22,12 +22,12 @@
 }
 
 .left {
-    width: 2%;
+    width: 8%;
     text-align: center;
 }
 
 .center {
-    width: 86%;
+    width: 80%;
 }
 
 .title {
@@ -456,4 +456,13 @@
     transform: translate(3px, 3px);
     transition-duration: .3s;
     box-shadow: 2px 2px 0px rgb(140, 32, 212);
+}
+
+/* description and date */
+.description {
+    color: white;
+}
+
+.date {
+    color: white;
 }
