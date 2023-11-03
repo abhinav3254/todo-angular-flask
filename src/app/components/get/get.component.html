@@ -1,4 +1,10 @@
 <div class="main">
+    <button mat-button (click)="openDialog()">Open dialog</button>
+    <!-- Export AS CSV button -->
+    <div class="export-as-csv" (click)="exportAsCSVFunction()">
+        <img src="assets\export_as_csv.svg" alt="">
+        <p>Export as CSV</p>
+    </div>
     <!-- search bar here -->
     <div class="search-bar">
         <form #searchField="ngForm" class="d-flex" role="search">

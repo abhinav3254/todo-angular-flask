@@ -13,6 +13,8 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { SnackBarComponent } from './components/snack-bar/snack-bar.component';
 import { FailedSnackBarComponent } from './components/failed-snack-bar/failed-snack-bar.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { MatDialogModule } from '@angular/material/dialog';
+
 
 @NgModule({
   declarations: [
@@ -30,7 +32,8 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
     BrowserAnimationsModule,
     MatExpansionModule,
     FormsModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

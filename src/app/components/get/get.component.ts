@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { TodoserviceService } from '../todoservice.service';
 import { Router } from '@angular/router';
 import { NgForm } from '@angular/forms';
+import { MatDialog } from '@angular/material/dialog';
+import { AddComponent } from '../add/add.component';
 
 @Component({
   selector: 'app-get',
@@ -12,7 +14,7 @@ export class GetComponent implements OnInit {
 
   todos: Todo[] = [];
 
-  constructor(private todoService: TodoserviceService, private router: Router) { }
+  constructor(private todoService: TodoserviceService, private router: Router, public dialog: MatDialog) { }
 
   ngOnInit(): void {
     this.getAllToDoFunction();
@@ -146,6 +148,15 @@ export class GetComponent implements OnInit {
         this.todos = res as Todo[];
       }
     );
+  }
+
+  // for dialog open
+  openDialog() {
+    const dialogRef = this.dialog.open(AddComponent);
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
   }
 
 }
