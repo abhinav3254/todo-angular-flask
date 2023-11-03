@@ -7,8 +7,7 @@
 .card {
     margin: 0.6rem auto;
     transition: all 0.5s;
-    /* background-color: rgba(0, 128, 128, 0.5); */
-    /* background-color: rgba(174, 127, 232, 255); */
+    background-color: #353935;
 }
 
 .hover-effect:hover {
@@ -27,12 +26,6 @@
     text-align: center;
 }
 
-
-/* .left div input {
-    margin: auto;
-    margin-top: 1.2rem;
-} */
-
 .center {
     width: 86%;
 }
@@ -42,15 +35,7 @@
     font-weight: 500;
     font-size: 1rem;
     color: #272343;
-}
-
-.right {
-    width: 12%;
-    text-align: center;
-}
-
-.right p {
-    margin: auto;
+    color: white;
 }
 
 .description {
@@ -366,6 +351,8 @@
 .form-check p {
     margin: auto;
     margin-left: 10px;
+    color: white;
+    font-family: 'Ubuntu';
 }
 
 /* delete inside of expand css */

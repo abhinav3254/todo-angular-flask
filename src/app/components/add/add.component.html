@@ -26,12 +26,22 @@
                     <label class="form-check-label" for="exampleCheck1">Mark as completed</label>
                 </div>
                 <div style="text-align: center;">
-                    <button type="submit" class="btn">Submit</button>
+                    <!-- <button type="submit" class="btn">Submit</button> -->
+                    <button type="submit" class="custom_abhinav_close_button">
+                        <svg class="w-6 h-6" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" stroke-linejoin="round"
+                                stroke-linecap="round"></path>
+                        </svg>
+                        <div class="text">
+                            submit
+                        </div>
+                    </button>
                 </div>
             </form>
         </div>
     </div>
 </mat-dialog-content>
 <mat-dialog-actions align="end">
-    <button mat-button mat-dialog-close>Cancel</button>
+    <button mat-button mat-dialog-close class="btn btn-danger">Cancel</button>
 </mat-dialog-actions>

@@ -61,7 +61,8 @@
     </div>
 
     <div class="card hover-effect" *ngFor="let todo of todos">
-        <div class="card-body">
+        <div class="card-body" data-bs-toggle="collapse" [attr.data-bs-target]="'#collapseExample' + todo.id"
+            aria-expanded="false" [attr.aria-controls]="'collapseExample' + todo.id">
             <div class="inside">
                 <!-- for right -->
                 <div class="left">
@@ -75,17 +76,8 @@
                 <div class="center">
                     <p class="title">{{todo.title|uppercase}}</p>
                 </div>
-                <!-- for left -->
-                <div class="right">
-                    <p class="d-inline-flex gap-1">
-                        <button class="btn btn-primary img-btn" type="button" data-bs-toggle="collapse"
-                            [attr.data-bs-target]="'#collapseExample' + todo.id" aria-expanded="false"
-                            [attr.aria-controls]="'collapseExample' + todo.id">
-                            info
-                        </button>
-                    </p>
-                </div>
             </div>
+            <!-- This is collapse -->
             <!-- putting collapse here bcz it doesn't disturb width percentage -->
             <div class="collapse" [attr.id]="'collapseExample' + todo.id">
                 <div class="card card-body">
