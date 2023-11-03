@@ -15,7 +15,7 @@
 .card {
     margin: 0.6rem auto;
     transition: all 0.5s;
-    background-color: rgba(0, 128, 128, 0.5);
+    /* background-color: rgba(0, 128, 128, 0.5); */
     /* background-color: rgba(174, 127, 232, 255); */
 }
 
@@ -49,6 +49,7 @@
     font-family: 'Ubuntu';
     font-weight: 500;
     font-size: 1rem;
+    color: #272343;
 }
 
 .right {
@@ -63,6 +64,7 @@
 .description {
     font-family: 'Ubuntu';
     font-size: 1.2rem;
+    color: #2d334a;
 }
 
 .bottom-button {
@@ -71,14 +73,6 @@
     justify-content: space-evenly;
 }
 
-.down-img {
-    width: 1rem;
-    height: 0.6rem;
-}
-
-.img-btn {
-    background: transparent;
-}
 
 
 .export-as-csv {

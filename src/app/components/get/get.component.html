@@ -1,16 +1,6 @@
 <div class="main">
-    <!-- Export AS CSV button -->
-    <!-- <div class="export-as-csv" (click)="exportAsCSVFunction()">
-        <img src="assets\export_as_csv.svg" alt="">
-        <p>Export CSV</p>
-    </div> -->
     <!-- search bar here -->
     <div class="search-bar">
-        <!-- <form #searchField="ngForm" (submit)="searchIt(searchField.value.searchValue)" class="d-flex" role="search">
-            <input name="searchValue" ngModel class="form-control me-2" type="search" placeholder="Search"
-                aria-label="Search">
-            <button class="btn btn-success" type="submit">search</button>
-        </form> -->
         <form #searchField="ngForm" class="d-flex" role="search">
             <input name="searchValue" ngModel #searchInput="ngModel" class="form-control me-2" type="search"
                 placeholder="Search" aria-label="Search" (input)="onInputChange(searchInput.value)">
@@ -52,7 +42,7 @@
                         <button class="btn btn-primary img-btn" type="button" data-bs-toggle="collapse"
                             [attr.data-bs-target]="'#collapseExample' + todo.id" aria-expanded="false"
                             [attr.aria-controls]="'collapseExample' + todo.id">
-                            <img class="down-img" src="assets\down_arrow.svg" alt="">
+                            info
                         </button>
                     </p>
                 </div>

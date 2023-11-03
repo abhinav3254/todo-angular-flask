@@ -13,3 +13,8 @@ form {
 .submit-file {
     margin: 0.4rem 2rem;
 }
+
+.btn {
+    background-color: #ffd803;
+    color: #272343;
+}

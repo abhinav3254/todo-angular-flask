@@ -12,12 +12,10 @@
     flex-direction: row;
     padding: 0.5rem 2rem;
     transition: all 1s;
-    /* background-color: rgba(174, 127, 232, 255); */
-    /* color: black; */
+    border: 1px solid black;
 }
 
 .export-as-csv:hover {
-    /* box-shadow: 5px 5px 5px rgba(174, 127, 232, 0.8); */
     cursor: pointer;
 }
 
