@@ -2,15 +2,7 @@
     margin: 1rem 2rem;
 }
 
-.search-bar {
-    margin: 0.5rem;
-}
 
-.filter {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
 
 .card {
     margin: 0.6rem auto;
@@ -103,11 +95,6 @@
     margin: auto;
 }
 
-
-/* .delete-custom {
-    border: 1px solid black;
-} */
-
 .delete-custom img {
     width: 2rem;
     height: 2rem;
@@ -116,4 +103,267 @@
 .update-custom img {
     width: 2rem;
     height: 2rem;
+}
+
+
+/* cutom button flex design */
+.custom_buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+/* here is the code for custom download as csv button */
+.custom_abhinav_button_download {
+    position: relative;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 1px solid #17795E;
+    background-color: #209978;
+    overflow: hidden;
+}
+
+.custom_abhinav_button_download,
+.custom_abhinav_button_download .button__icon,
+.custom_abhinav_button_download .button__text {
+    transition: all 0.3s;
+}
+
+.custom_abhinav_button_download .button__text {
+    transform: translateX(22px);
+    color: #fff;
+    font-weight: 600;
+}
+
+.custom_abhinav_button_download .button__icon {
+    position: absolute;
+    transform: translateX(109px);
+    height: 100%;
+    width: 39px;
+    background-color: #17795E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom_abhinav_button_download .svg {
+    width: 20px;
+    fill: #fff;
+}
+
+.custom_abhinav_button_download:hover {
+    background: #17795E;
+}
+
+.custom_abhinav_button_download:hover .button__text {
+    color: transparent;
+}
+
+.custom_abhinav_button_download:hover .button__icon {
+    width: 148px;
+    transform: translateX(0);
+}
+
+.custom_abhinav_button_download:active .button__icon {
+    background-color: #146c54;
+}
+
+.custom_abhinav_button_download:active {
+    border: 1px solid #146c54;
+}
+
+/* here is custom add element css */
+.custom_abhinav_add_todo {
+    position: relative;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 1px solid #34974d;
+    background-color: #3aa856;
+}
+
+.custom_abhinav_add_todo,
+.custom_abhinav_add_todo .button__icon,
+.custom_abhinav_add_todo .button__text {
+    transition: all 0.3s;
+}
+
+.custom_abhinav_add_todo .button__text {
+    transform: translateX(20px);
+    /* Adjusted value for text position */
+    color: #fff;
+    font-weight: 600;
+}
+
+.custom_abhinav_add_todo .button__icon {
+    position: absolute;
+    right: 5px;
+    /* Adjusted value for icon position */
+    height: 100%;
+    width: 39px;
+    background-color: #34974d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom_abhinav_add_todo .svg {
+    width: 30px;
+    stroke: #fff;
+}
+
+.custom_abhinav_add_todo:hover {
+    background: #34974d;
+}
+
+.custom_abhinav_add_todo:hover .button__text {
+    color: transparent;
+}
+
+.custom_abhinav_add_todo:hover .button__icon {
+    width: 110px;
+    /* Adjusted value for icon width on hover */
+}
+
+.custom_abhinav_add_todo:active .button__icon {
+    background-color: #2e8644;
+}
+
+.custom_abhinav_add_todo:active {
+    border: 1px solid #2e8644;
+}
+
+/* custom search input */
+.custom_search_abhinav {
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    position: relative;
+    max-width: 190px;
+}
+
+.custom_search_abhinav .input {
+    width: 100%;
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
+}
+
+.custom_search_abhinav .input::placeholder {
+    color: #9e9ea7;
+}
+
+.custom_search_abhinav .input:focus,
+.custom_search_abhinav .input:hover {
+    outline: none;
+    border-color: rgba(234, 76, 137, 0.4);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+}
+
+.custom_search_abhinav .icon {
+    position: absolute;
+    left: 1rem;
+    fill: #9e9ea7;
+    width: 1rem;
+    height: 1rem;
+}
+
+/* check it */
+.abhinav_to_complete input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.abhinav_to_complete {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+}
+
+.abhinav_to_complete .checkmark {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 2em;
+    width: 2em;
+    background-color: #ccc;
+    border-radius: 50%;
+    transition: .4s;
+}
+
+.abhinav_to_complete .checkmark:hover {
+    box-shadow: inset 17px 17px 16px #b3b3b3, inset -17px -17px 16px #ffffff;
+}
+
+.abhinav_to_complete input:checked~.checkmark {
+    box-shadow: none;
+    background-color: limegreen;
+    transform: rotateX(360deg);
+}
+
+.abhinav_to_complete input:checked~.checkmark:hover {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.abhinav_to_complete .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.abhinav_to_complete input:checked~.checkmark:after {
+    display: block;
+}
+
+.abhinav_to_complete .checkmark:after {
+    left: 0.96em;
+    top: 0.7em;
+    width: 0.25em;
+    height: 0.5em;
+    border: solid white;
+    border-width: 0 0.15em 0.15em 0;
+    box-shadow: 0.1em 0.1em 0em 0 rgba(0, 0, 0, 0.3);
+    transform: rotate(45deg);
+}
+
+
+/* for filter check box */
+.filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 1rem 0;
+}
+
+.form-check {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-check label {
+    margin: auto;
+}
+
+.form-check p {
+    margin: auto;
+    margin-left: 10px;
 }
