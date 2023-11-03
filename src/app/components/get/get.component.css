@@ -1,5 +1,5 @@
 .main {
-    margin: 5rem 2rem;
+    margin: 1rem 2rem;
 }
 
 .search-bar {
@@ -13,12 +13,14 @@
 }
 
 .card {
-    margin: 0.4rem auto;
+    margin: 0.6rem auto;
     transition: all 0.5s;
+    background-color: rgba(0, 128, 128, 0.5);
+    /* background-color: rgba(174, 127, 232, 255); */
 }
 
 .hover-effect:hover {
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 5px rgba(174, 127, 232, 0.8);
     cursor: pointer;
 }
 
@@ -67,4 +69,57 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+}
+
+.down-img {
+    width: 1rem;
+    height: 0.6rem;
+}
+
+.img-btn {
+    background: transparent;
+}
+
+
+.export-as-csv {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid black; */
+    padding: 0.5rem 2rem;
+    width: 14%;
+    transition: all 1s;
+    /* border-radius: 0.5rem; */
+    background-color: rgba(174, 127, 232, 255);
+    color: black;
+}
+
+.export-as-csv:hover {
+    box-shadow: 5px 5px 5px rgba(174, 127, 232, 0.8);
+    cursor: pointer;
+}
+
+.export-as-csv img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: auto;
+}
+
+.export-as-csv p {
+    margin: auto;
+}
+
+
+/* .delete-custom {
+    border: 1px solid black;
+} */
+
+.delete-custom img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.update-custom img {
+    width: 2rem;
+    height: 2rem;
 }

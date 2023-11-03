@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { SnackBarComponent } from './components/snack-bar/snack-bar.component';
 import { FailedSnackBarComponent } from './components/failed-snack-bar/failed-snack-bar.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FailedSnackBarComponent } from './components/failed-snack-bar/failed-sn
     AddComponent,
     GetComponent,
     SnackBarComponent,
-    FailedSnackBarComponent
+    FailedSnackBarComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,

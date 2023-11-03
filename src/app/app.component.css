@@ -1,34 +1,23 @@
 .main {
-    padding: 1rem;
     border: 1px solid black;
 }
 
 .second-main {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
-.get {
-    border: 1px solid black;
+.get-div {
+    text-align: center;
+    background-color: green;
+    margin: 0.4rem;
     padding: 0.5rem 4rem;
-    border-radius: 1rem;
-    transition: all 0.5s;
 }
 
-.get:hover {
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
-    cursor: pointer;
-}
-
-.add {
-    border: 1px solid black;
+.add-div {
+    text-align: center;
+    background-color: yellowgreen;
+    margin: 0.4rem;
     padding: 0.5rem 4rem;
-    border-radius: 1rem;
-    transition: all 0.5s;
-}
-
-.add:hover {
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
-    cursor: pointer;
 }

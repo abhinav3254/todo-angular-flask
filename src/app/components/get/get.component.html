@@ -1,4 +1,9 @@
 <div class="main">
+    <!-- Export AS CSV button -->
+    <!-- <div class="export-as-csv" (click)="exportAsCSVFunction()">
+        <img src="assets\export_as_csv.svg" alt="">
+        <p>Export CSV</p>
+    </div> -->
     <!-- search bar here -->
     <div class="search-bar">
         <!-- <form #searchField="ngForm" (submit)="searchIt(searchField.value.searchValue)" class="d-flex" role="search">
@@ -14,10 +19,9 @@
 
     </div>
 
+
     <!-- check box for filter -->
-    <button class="btn btn-info" (click)="exportAsCSVFunction()">Export CSV</button>
     <div class="filter">
-        <p>Filter :- </p>
         <div class="form-check" *ngFor="let filter of filters">
             <input (change)="clickedRadioBootStrap(filter)" class="form-check-input" type="checkbox" [id]="filter.name"
                 [value]="filter.name" [checked]="filter.selected">
@@ -45,10 +49,10 @@
                 <!-- for left -->
                 <div class="right">
                     <p class="d-inline-flex gap-1">
-                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                        <button class="btn btn-primary img-btn" type="button" data-bs-toggle="collapse"
                             [attr.data-bs-target]="'#collapseExample' + todo.id" aria-expanded="false"
                             [attr.aria-controls]="'collapseExample' + todo.id">
-                            View Details
+                            <img class="down-img" src="assets\down_arrow.svg" alt="">
                         </button>
                     </p>
                 </div>
@@ -60,11 +64,18 @@
                     <!-- <p>{{todo.created_date | date:'dd/MM/yyyy hh:mm a'}}</p> -->
                     <p>{{todo.created_date | date}}</p>
                     <div class="bottom-button">
-                        <button class="btn btn-success">update</button>
-                        <button class="btn btn-danger" (click)="deleteToDo(todo.id)">delete</button>
+                        <div class="update-custom">
+                            <img src="assets\update.svg" alt="">
+                        </div>
+                        <!-- <button class="btn btn-danger" (click)="deleteToDo(todo.id)">delete</button> -->
+                        <div class="delete-custom" (click)="deleteToDo(todo.id)">
+                            <img src="assets\delete_svg.svg" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<div style="height: 0.2rem;"></div>
