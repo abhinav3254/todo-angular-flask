@@ -171,6 +171,8 @@ export class GetComponent implements OnInit {
       // console.log(`Dialog result: ${result}`);
     });
 
+    // this.router.navigate(['/']);
+
   }
 
 }
