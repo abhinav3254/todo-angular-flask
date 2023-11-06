@@ -14,6 +14,7 @@ import { SnackBarComponent } from './components/snack-bar/snack-bar.component';
 import { FailedSnackBarComponent } from './components/failed-snack-bar/failed-snack-bar.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { DialogBoxComponent } from './components/dialog-box/dialog-box.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     GetComponent,
     SnackBarComponent,
     FailedSnackBarComponent,
-    NavBarComponent
+    NavBarComponent,
+    DialogBoxComponent
   ],
   imports: [
     BrowserModule,

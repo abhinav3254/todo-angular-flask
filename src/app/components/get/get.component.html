@@ -95,7 +95,7 @@
                     <p class="date">{{todo.created_date | date}}</p>
                     <div class="bottom-button">
                         <!-- update button -->
-                        <button class="custom_abhinav_edit_button">
+                        <button class="custom_abhinav_edit_button" (click)="openUpdateDialog(todo)">
                             Edit
                             <svg class="svg" viewBox="0 0 512 512">
                                 <path

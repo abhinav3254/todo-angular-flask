@@ -71,4 +71,10 @@ export class TodoserviceService {
     return this.http.get(url);
   }
 
+  // update data
+  updateToDo(data: any): Observable<any> {
+    const url = 'http://127.0.0.1:5000/update';
+    return this.http.put(url, data);
+  }
+
 }

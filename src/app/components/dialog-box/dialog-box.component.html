@@ -1,0 +1,36 @@
+<h2 mat-dialog-title>Update Todo</h2>
+<mat-dialog-content class="mat-typography">
+    <form #addToDoForm="ngForm" (submit)="updateToDoFunction()">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Title</label>
+            <input name="title" [(ngModel)]="title" type="text" class="form-control" id="exampleInputEmail1"
+                aria-describedby="emailHelp">
+        </div>
+        <div class="form-floating">
+            <textarea name="description" [(ngModel)]="description" class="form-control"
+                placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Description</label>
+        </div>
+        <div class="mb-3 form-check">
+            <input name="completed" [(ngModel)]="completed" type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Mark as completed</label>
+        </div>
+        <div style="text-align: center;">
+            <!-- <button type="submit" class="btn">Submit</button> -->
+            <button type="submit" class="custom_abhinav_close_button">
+                <svg class="w-6 h-6" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" stroke-linejoin="round"
+                        stroke-linecap="round"></path>
+                </svg>
+                <div class="text">
+                    submit
+                </div>
+            </button>
+        </div>
+    </form>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Cancel</button>
+    <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Install</button>
+</mat-dialog-actions>
